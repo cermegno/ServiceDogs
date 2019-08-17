@@ -10,7 +10,7 @@ The program gets its name from the Sillicon Valley TV series that portraits a gr
 
 ## The Project
 
-In this occasion, during the 5-day workshop the team undertook a team project to put the leart skills into practice. The idea was to collaborate with a charity so that the project could help somebody in need. After the workshop all team members resumed their day-to-day dutier but some of them kept collaborating on the project by contributing code during 4 more weeks when their personal time allowed it
+In this occasion, during the 5-day workshop the team undertook a team project to put the learnt skills into practice. The idea was to collaborate with a charity so that the project could help somebody in need. After the workshop all team members resumed their day-to-day duties but some of them kept collaborating on the project by contributing code during 4 more weeks when their personal time allowed it
 
 The project itself was to develop a prototype application to help ASDAC manage their charitative activities. ASDAC (American ...) provides service dogs for military veterans that ... Various service providers collaborate with the charity such as pet stores, airlines and other transport organizations to provide discounts or benefits to the military veterans and their service dogs. However, these Service Providers are facing an increasing amount of fraud by other customers or passengers that pretend their ordinary pets are also service dogs. This abuse ultimately puts the collaboration with ASDAC at risk. Hence the project needs to include a mechanism by which partnering service providers can validate the identity of both the military veteran and the service dog.
 
