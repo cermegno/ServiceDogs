@@ -1,0 +1,105 @@
+
+
+{% include 'head.html' %}
+<!-- Content -->
+<div class="container">
+   <!--Grid row-->
+   <div class="row wow fadeIn">
+      <!--Grid column-->
+      <div class="col-md-12 mb-4 white-text text-center text-md-left">
+         <!--Card-->
+         <div class="card">
+            <!--Card content-->
+            <div class="card-body">
+               <!-- Main heading -->
+              <h1 class="animated fadeIn text-muted">MODIFY DOG DETAILS</h1>
+
+
+              <form method="post" action="{{ url_for('editdogapplychanges') }}" enctype="multipart/form-data">
+
+<div class="row">
+  <div class="col-md-6 mb-4 white-text text-center text-md-left">
+
+          		<table>
+                  <tr>
+                    <td><p class="animated fadeIn text-muted">Dog ID</p></td>
+                    <td>
+                      <!--Need to keep the dogid to use in the insert. I add it to the form with a 'name'-->
+                      <!--To display it, we use type=text readonly. Otherwise use the hidden widget-->
+                      <input type="text" name="dogid" value="{{dogid}}"  readonly style="width: 150px; height: 30px"></td>
+                  <tr>
+                    <td><p class="animated fadeIn text-muted">Registration ID</p></td>
+                    <td><input type="text" name="registration_id" value="{{ dog_details["registration_id"] }}" readonly style="width: 150px; height: 30px"></td>
+                    <!--input type="hidden" name="dddogid" value={{dogid}}-->
+                  </tr>
+                  <tr>
+                    <td><p class="animated fadeIn text-muted">Dog Name</p></td>
+                    <td><input type="text" name="name" value="{{ dog_details["name"] }}" style="width: 150px; height: 30px"></td>
+                  </tr>
+                  <tr>
+                    <td><p class="animated fadeIn text-muted">Pedigree</p></td>
+                    <td><input type="text" name="pedigree" value="{{ dog_details["pedigree"] }}" style="width: 150px; height: 30px"></td>
+                  </tr>
+                  <tr>
+                      <td><p class="animated fadeIn text-muted">Description</p></td>
+                      <td><input type="text" name="description" value="{{ dog_details["description"] }}" style="width: 150px; height: 30px"></td>
+                    </tr>
+                    <tr>
+                    <td><p class="animated fadeIn text-muted">Handler ID</p></td>
+                    <td><input type="text" name="handler_id" value="{{ dog_details["handler_id"] }}" style="width: 150px; height: 30px"></td>
+                  </tr>
+                </table>
+               <!-- Main heading -->
+   </div>
+   <div class="col-md-6 mb-4 white-text text-center text-md-left">
+
+
+         		<table>
+				  <tr>
+                    <td><p class="animated fadeIn text-muted">Vaccination Status</p></td>
+                    <td><p class="animated fadeIn text-muted">Current Vaccination status : {{ dog_details["vacc_status"] }}</p></td>
+                  </tr>
+                  <tr>
+                    <td><p class="animated fadeIn text-muted">Select the new status:</p></td>
+                    <td><p class="animated fadeIn text-muted"><input type="radio" name="vacc_status" value="current" checked="checked"> Current
+                    <input type="radio" name="vacc_status" value="expired"> Expired</p></td>
+                  </tr>
+          			  <tr>
+                      <td><p class="animated fadeIn text-muted">Registration Status</p></td>
+                      <td><p class="animated fadeIn text-muted">Current Registration status : {{ dog_details["reg_status"] }}</p></td>
+                    </tr>
+                    <tr>
+                      <td><p class="animated fadeIn text-muted">Select the new status:</p></td>
+                      <td><p class="animated fadeIn text-muted"><input type="radio" name="reg_status" value="current" checked="checked"> Current
+                      <input type="radio" name="reg_status" value="expired"> Expired</p></td>
+                    </tr>
+                    <tr>
+                    <td><p class="animated fadeIn text-muted">Current photo is:</p></td>
+                    <td><img src="{{ photo }}"  width=200></td>
+                  </tr>
+                  <tr>
+                    <td><p class="animated fadeIn text-muted">Upload new Photo (JPG/JPEG only)</p></td>
+                    <td><input type="file" name="file" class="animated fadeIn text-muted"></td>
+                  </tr>
+                </table>
+    </div>
+  </div>
+
+          			<br><br>
+                <table>
+                  <tr>
+                    <td><input class="btn btn-blue" type="submit" value="SUBMIT"/></td>
+                    <td><a href="/admin" class="btn btn-red">Cancel</a></td>
+                  </tr>
+                </table>
+
+              </form>
+          </div>
+       </div>
+    </div>
+    <!--Grid column-->
+ </div>
+ <!--Grid row-->
+</div>
+<!-- Content -->
+{% include 'tail.html' %}

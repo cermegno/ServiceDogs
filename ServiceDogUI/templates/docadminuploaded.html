@@ -1,0 +1,56 @@
+
+
+{% include 'head.html' %}
+<!-- Content -->
+<div class="container">
+   <!--Grid row-->
+   <div class="row wow fadeIn">
+
+      <!--Grid column-->
+      <div class="col-md-6 mb-4 white-text text-center text-md-left">
+         <!--Card-->
+         <div class="card">
+            <!--Card content-->
+            <div class="card-body">
+               <h1 class="animated fadeIn text-muted">Document upload complete</h1>
+                  <table spacing=2>
+                    <tr>
+                      <td><p class="animated fadeIn text-muted">DocumentID:</p></td>
+                      <td><p class="animated fadeIn text-muted">{{ id }}</p></td>
+                    </tr>
+					<tr>
+                      <td><p class="animated fadeIn text-muted">DocumentType:</p></td>
+                      <td><p class="animated fadeIn text-muted">{{ doc_details["doco_type"] }}</p></td>
+                    </tr>
+                    <tr>
+                      <td><p class="animated fadeIn text-muted">DogID:</p></td>
+                      <td><p class="animated fadeIn text-muted">{{ doc_details["dog_id"] }}</p></td>
+                      </tr>
+                      <tr>
+                      <td><p class="animated fadeIn text-muted">HandlerID:</p></td>
+                      <td><p class="animated fadeIn text-muted">{{ doc_details["handler_id"] }}</p></td>
+                    </tr>
+                    <tr>
+                      <td><p class="animated fadeIn text-muted">Location:</p></td>
+                      <td><p class="animated fadeIn text-muted">{{ doc_details["name"] }}</p></td>
+                    </tr>
+                    <tr>
+                      <td><p class="animated fadeIn text-muted">Status:</p></td>
+                      <td><p class="animated fadeIn text-muted">{{ doc_details["status"] }}</p></td>
+                    </tr>
+                    </table>
+
+                  <br><br>
+
+                  <a href="/admin" class="btn btn-blue">Back to admin menu</a>
+
+            </div>
+         </div>
+      </div>
+      <!--Grid column-->
+
+   </div>
+   <!--Grid row-->
+</div>
+<!-- Content -->
+{% include 'tail.html' %}

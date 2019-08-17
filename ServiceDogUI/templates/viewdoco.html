@@ -1,0 +1,80 @@
+
+{% include 'head.html' %}
+
+
+
+<!-- Content -->
+<div class="container">
+   <!--Grid row-->
+   <div class="row wow fadeIn">
+
+        <!--Grid column-->
+     <div class="col-md-6 mb-4 white-text text-center text-md-left">
+        <!--Card-->
+        <div class="card">
+           <!--Card content-->
+           <div class="card-body">
+              <!-- Main heading -->
+              <h1 class="animated fadeIn text-muted">WELCOME</h1>
+              <p class="animated fadeIn text-muted">This is the registry of Service Dogs and Handlers. <br><br>Please make your selection using the top menu.
+                 Status of service dogs and their certified handlers can be verified without the need to log in.
+                 Other services require an active and valid login.
+              </p>
+              <center><img src="{{ url_for('static', filename='servicedoglogo.jpg') }}" width="270" /></center>
+              <!-- Main heading -->
+           </div>
+        </div>
+     </div>
+     <!--Grid column-->
+
+
+	 
+      <!--Grid column-->
+      <div class="col-md-6 mb-4 white-text text-md-left">
+         <!--Card-->
+         <div class="card">
+            <!--Card content-->
+            <div class="card-body">
+				<h1 class="animated fadeIn text-muted">DOCUMENT INFO</h1>
+				<hr>
+            <table>
+
+			   <tr>
+                  <td class="animated fadeIn text-muted" width=50%>Handler ID:</td>
+                  <td class="animated fadeIn text-muted" width=50%><a href="/viewhandler?h_id={{ doco_details["handler_id"] }}">{{ doco_details["handler_id"] }}</a></td>
+               </tr>
+               <tr>
+                  <td class="animated fadeIn text-muted" width=50%>Dog ID:</td>
+                  <td class="animated fadeIn text-muted" width=50%><a href="/viewdog?dogid={{ doco_details["dog_id"] }}">{{ doco_details["dog_id"] }}</a></td>
+               </tr>
+			   <tr>
+                  <td class="animated fadeIn text-muted" width=50%>Document ID:</td>
+                  <td class="animated fadeIn text-muted" width=50%><a href="{{ doco_details["name"] }}">{{ doco_id }}</a></td>
+               </tr>
+			   <tr>
+                  <td class="animated fadeIn text-muted" width=50%>Document Type:</td>
+                  <td class="animated fadeIn text-muted" width=50%>{{ doco_details["doco_type"] }}</td>
+               </tr>			   
+               <tr>
+                  <td class="animated fadeIn text-muted" width=50%>Document Status:</td>
+                  <td class="animated fadeIn text-muted" width=50%>{{ doco_details["status"] }}</td>
+               </tr>
+
+            </table>
+            <br>
+            <a href="/admin" class="btn btn-blue">Back to admin menu</a>
+            <a href="/editdocoshowcurrent.html?doco_id={{ doco_id }}" class="btn btn-blue">Edit this Document</a>
+
+             <!-- Main heading -->
+            </div>
+         </div>
+      </div>
+      <!--Grid column-->
+
+   </div>
+   <!--Grid row-->
+</div>
+<!-- Content -->
+
+
+  {% include 'tail.html' %}
