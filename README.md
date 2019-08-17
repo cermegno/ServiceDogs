@@ -39,7 +39,7 @@ Finally, object storage is used for storing uploaded documents relating to the h
 
 <img src="images/viewdog.jpg" alt="view dog page" width="900">
 
-### - To Do
+### - Known Limitations
 When reviewing the code you will notice that given the time and resource constraint not a lot of effort has been put in things like error checking and equally important there is no meaningful security. A login page is provided and without signing in the welcome page only offers some restricted read operations. However the "control panel" where all the functionality has been aggregated can be accessed directly bypassing the login page. This helped accelerate the development
 
 <img src="images/admin.jpg" alt="control panel page" width="900">
