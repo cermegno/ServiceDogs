@@ -20,26 +20,26 @@ The Pied Piper team had to develop a prototype to proof the concept and to show 
 
 ## The App
 
-### - General Architecture
+### General Architecture
 The app was architected with a modern microservices-based design so that it can be scaled horizontally with ease. The following diagram shows the architecture at a glance.
 
 <img src="images/architecture.jpg" alt="app architecture" width="600">
 
-### - User Interface
+### User Interface
 There is a web-app front-end UI (User Interface) that provides access to Administrators, Service Providers and Handlers (which is the term used for a military veteran that owns a service dog). The UI also provides a few API calls for apps owned by service providers to integrate with ASDAC's systems to for example print badge or for identity verification. The UI is responsive thanks to the use of Bootstrap CSS
 
-### - Backend Microservices
+### Backend Microservices
 The backend services that GOT  implemented are the dogs, handlers and document management microservices. Each of them is underpinned by its own database. This allows for scaling the different services independently from each other which can then be load-balanced with ease. This architecture lends itself to the use of specialized databases to meet the need of each micro-service. In this instance all of them have been designed with MongoDB, however given that each micro-service exposes its functionality through a Rest API the database can be changed as long as the Rest API behaviour is maintained. For example a graph database could be used for the handler's database to help ASDAC create a sort of social network where handlers get to build relationships with other handlers potentially helping their condition
 
-### - Other Microservices
+### Other Microservices
 Initially the API was going to be done by an additional component that we referred to as the Engine. This module was going to translate any calls coming from the UI into whatever calls to the backed services were required. For reference the repo shows also its code as well as the Authentication service code but in the end neither the Engine nor the Authentication service were integrated into the solution
 
-### - Object Storage
+### Object Storage
 Finally, object storage is used for storing uploaded documents relating to the health or vaccination status of the service dogs, or dogs and handlers photo IDs ans well as the QR codes that are generated automatically when a dog is added to the system to help with verification
 
 <img src="images/viewdog.jpg" alt="view dog page" width="900">
 
-### - Known Limitations
+### Known Limitations
 When reviewing the code you will notice that given the time and resource constraint not a lot of effort has been put in things like error checking and equally important there is no meaningful security. A login page is provided and without signing in the welcome page only offers some restricted read operations. However the "control panel" where all the functionality has been aggregated can be accessed directly bypassing the login page. This helped accelerate the development
 
 <img src="images/admin.jpg" alt="control panel page" width="900">
