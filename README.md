@@ -16,14 +16,14 @@ The project itself was to develop a prototype application to help ASDAC manage t
 
 The Pied Piper team had to develop a prototype to proof the concept and to show what's possible. The final product will be arranged by different means and developed by somebody else
 
-<img src="images/verifypage.jpg" alt="verification page" width="1000">
+<img src="images/verifypage.jpg" alt="verification page" width="900">
 
 ## The App
 
 ### - General Architecture
 The app was architected with a modern microservices-based design so that it can be scaled horizontally with ease. The following diagram shows the architecture at a glance.
 
-<img src="images/architecture.jpg" alt="app architecture" width="964">
+<img src="images/architecture.jpg" alt="app architecture" width="600">
 
 ### - User Interface
 There is a web-app front-end UI (User Interface) that provides access to Administrators, Service Providers and Handlers (which is the term used for a military veteran that owns a service dog). The UI also provides a few API calls for apps owned by service providers to integrate with ASDAC's systems to for example print badge or for identity verification. The UI is responsive thanks to the use of Bootstrap CSS
@@ -37,9 +37,9 @@ Initially the API was going to be done by an additional component that we referr
 ### - Object Storage
 Finally, object storage is used for storing uploaded documents relating to the health or vaccination status of the service dogs, or dogs and handlers photo IDs ans well as the QR codes that are generated automatically when a dog is added to the system to help with verification
 
-<img src="images/viewdog.jpg" alt="view dog page" width="1080">
+<img src="images/viewdog.jpg" alt="view dog page" width="900">
 
 ### - To Do
 When reviewing the code you will notice that given the time and resource constraint not a lot of effort has been put in things like error checking and equally important there is no meaningful security. A login page is provided and without signing in the welcome page only offers some restricted read operations. However the "control panel" where all the functionality has been aggregated can be accessed directly bypassing the login page. This helped accelerate the development
 
-<img src="images/admin.jpg" alt="control panel page" width="1080">
+<img src="images/admin.jpg" alt="control panel page" width="900">
