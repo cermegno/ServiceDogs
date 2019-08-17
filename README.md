@@ -16,14 +16,14 @@ The project itself was to develop a prototype application to help ASDAC manage t
 
 The Pied Piper team had to develop a prototype to proof the concept and to show what's possible. The final product will be arranged by different means and developed by somebody else
 
-![verification page](images/verifypage.jpg)
+![verification page](images/verifypage.jpg | width=520)
 
 ## The App
 
 ### - General Architecture
 The app was architected with a modern microservices-based design so that it can be scaled horizontally with ease. The following diagram shows the architecture at a glance.
 
-![architecture](images/architecture.jpg)
+![architecture](images/architecture.jpg | width=599)
 
 ### - User Interface
 There is a web-app front-end UI (User Interface) that provides access to Administrators, Service Providers and Handlers (which is the term used for a military veteran that owns a service dog). The UI also provides a few API calls for apps owned by service providers to integrate with ASDAC's systems to for example print badge or for identity verification. The UI is responsive thanks to the use of Bootstrap CSS
