@@ -17,6 +17,7 @@ The project itself was to develop a prototype application to help ASDAC manage t
 The Pied Piper team had to develop a prototype to proof the concept and to show what's possible. The final product will be arranged by different means and developed by somebody else
 
 ![verification page](images/verifypage.jpg | width=520)
+<img src="images/verifypage.jpg" alt="verification page" width="520">
 
 ## The App
 
