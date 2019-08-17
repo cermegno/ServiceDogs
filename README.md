@@ -4,7 +4,7 @@ This repo contains the code produced by the students of the Pied Piper program t
 ## The Pied Piper program
 The Pied Piper program goal is to educate DellEMC pre-sales across APJ and Greater China regions in the various technologies that are fuelling the digital transformation such as Cloud Native apps, Agile, DevOps, IoT and analytics/AI. What makes this program different is that engineers learn by doing (approximately 85% of the 5-day workshop is hands-on). By focusing on doing instead of just listening or reading the learning outcomes are much greater
 
-The program gets its name from the Sillicon Valley TV series that portraits a group of young guys in California that found a start-up called Pied Piper. In order to lear more about the program visit [these blog articles](http://anzpiper.blogspot.com/2017/08/must-start-somewhere.html)
+The program gets its name from the Silicon Valley TV series that portraits a group of young guys in California that found a start-up called Pied Piper. In order to lear more about the program visit [these blog articles](http://anzpiper.blogspot.com/2017/08/must-start-somewhere.html)
 
 ![Pied Piper logo](images/piperlogo.png)
 
