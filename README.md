@@ -1,14 +1,13 @@
-# Service Dogs App
 This repo contains the code produced by the students of the Pied Piper program that took place in Sydney in June 2019. A total of 14 students from Australia, New Zealand and Japan participated in the program and contributed their code to this project
 
-## The Pied Piper program
+# The Pied Piper program
 The Pied Piper program goal is to educate DellEMC pre-sales across APJ and Greater China regions in the various technologies that are fuelling the digital transformation such as Cloud Native apps, Agile, DevOps, IoT and analytics/AI. What makes this program different is that engineers learn by doing (approximately 85% of the 5-day workshop is hands-on). By focusing on doing instead of just listening or reading the learning outcomes are much greater
 
 The program gets its name from the Silicon Valley TV series that portraits a group of young guys in California that found a start-up called Pied Piper. In order to lear more about the program visit [these blog articles](http://anzpiper.blogspot.com/2017/08/must-start-somewhere.html)
 
 ![Pied Piper logo](images/piperlogo.png)
 
-## The Project
+# The Project
 
 In this occasion, during the 5-day workshop the team undertook a team project to put the learnt skills into practice. The idea was to collaborate with a charity so that the project could help somebody in need. After the workshop all team members resumed their day-to-day duties but some of them kept collaborating on the project by contributing code during 4 more weeks when their personal time allowed it
 
@@ -18,7 +17,7 @@ The Pied Piper team had to develop a prototype to proof the concept and to show 
 
 <img src="images/verifypage.jpg" alt="verification page" width="900">
 
-## The App
+# The App
 
 ### General Architecture
 The app was architected with a modern microservices-based design so that it can be scaled horizontally with ease. The following diagram shows the architecture at a glance.
