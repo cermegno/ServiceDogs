@@ -3,3 +3,5 @@ description: Prototype app to manage a charity activity
 show_downloads: true
 github:
   repository_url: https://github.com/cermegno/ServiceDogsApp
+  public: true
+  is_project_page: true
